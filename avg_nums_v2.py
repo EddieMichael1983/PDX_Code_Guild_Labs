@@ -4,7 +4,7 @@ while True:    #user enters values until done
     value = input('Enter a number, or done: ')
     if value == 'done':
         break
-    nums.append(value)
+    nums.append(int(value))
 
 print('You entered: ' + str(nums))
 
