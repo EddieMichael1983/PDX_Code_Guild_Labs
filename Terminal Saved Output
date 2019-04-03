@@ -1,0 +1,487 @@
+Last login: Mon Apr  1 20:16:46 on ttys000
+ubuntu-server:~ sofie$ brew
+bExample usage:
+  brew search [TEXT|/REGEX/]
+  brew info [FORMULA...]
+  brew install FORMULA...
+  brew update
+  brew upgrade [FORMULA...]
+  brew uninstall FORMULA...
+  brew list [FORMULA...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA
+
+Contributing:
+  brew create [URL [--no-fetch]]
+  brew edit [FORMULA...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+ubuntu-server:~ sofie$ brew install zsh
+
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+asdf                dhall-json          hadolint            sdl
+cake                embulk              jenkins             ssllabs-scan
+cgal                get_iplayer         juju                taskell
+confluent-oss       glib-networking     logtalk             wget
+dhall               gocr                mps-youtube         xmake
+
+Error: The following directories are not writable by your user:
+/usr/local/share/man/man3
+/usr/local/share/man/man5
+/usr/local/share/man/man7
+
+You should change the ownership of these directories to your user.
+  sudo chown -R $(whoami) /usr/local/share/man/man3 /usr/local/share/man/man5 /usr/local/share/man/man7
+
+And make sure that your user has write permission.
+  chmod u+w /usr/local/share/man/man3 /usr/local/share/man/man5 /usr/local/share/man/man7
+ubuntu-server:~ sofie$ 
+ubuntu-server:~ sofie$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+Cloning Oh My Zsh...
+Cloning into '/Users/sofie/.oh-my-zsh'...
+remote: Enumerating objects: 1021, done.
+remote: Counting objects: 100% (1021/1021), done.
+remote: Compressing objects: 100% (937/937), done.
+remote: Total 1021 (delta 24), reused 853 (delta 21), pack-reused 0
+Receiving objects: 100% (1021/1021), 663.92 KiB | 8.20 MiB/s, done.
+Resolving deltas: 100% (24/24), done.
+Looking for an existing zsh config...
+Using the Oh My Zsh template file and adding it to ~/.zshrc
+Time to change your default shell to zsh!
+Changing shell for sofie.
+Password for sofie: 
+chsh: Credentials could not be verified, username or password is invalid.  Credentials could not be verified, username or password is invalid.
+ubuntu-server:~ sofie$ xxx
+-bash: xxx: command not found
+ubuntu-server:~ sofie$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+You already have Oh My Zsh installed.
+You'll need to remove /Users/sofie/.oh-my-zsh if you want to re-install.
+ubuntu-server:~ sofie$ rm -rf ~/.oh-my-zsh/
+ubuntu-server:~ sofie$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+Cloning Oh My Zsh...
+Cloning into '/Users/sofie/.oh-my-zsh'...
+remote: Enumerating objects: 1021, done.
+remote: Counting objects: 100% (1021/1021), done.
+remote: Compressing objects: 100% (937/937), done.
+remote: Total 1021 (delta 24), reused 853 (delta 21), pack-reused 0
+Receiving objects: 100% (1021/1021), 663.92 KiB | 6.99 MiB/s, done.
+Resolving deltas: 100% (24/24), done.
+Looking for an existing zsh config...
+Found ~/.zshrc. Backing up to ~/.zshrc.pre-oh-my-zsh
+Using the Oh My Zsh template file and adding it to ~/.zshrc
+Time to change your default shell to zsh!
+Changing shell for sofie.
+Password for sofie: 
+         __                                     __   
+  ____  / /_     ____ ___  __  __   ____  _____/ /_  
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / 
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  
+                        /____/                       ....is now installed!
+
+
+Please look over the ~/.zshrc file to select plugins, themes, and options.
+
+p.s. Follow us at https://twitter.com/ohmyzsh.
+
+p.p.s. Get stickers, shirts, and coffee mugs at https://shop.planetargon.com/collections/oh-my-zsh.
+
+➜  ~ python
+Python 2.7.10 (default, Aug 17 2018, 17:41:52) 
+[GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.0.42)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 + 3
+8
+>>> print("Ciao Bella")
+Ciao Bella
+>>> def add2(x)
+  File "<stdin>", line 1
+    def add2(x)
+              ^
+SyntaxError: invalid syntax
+>>> def add2(x):
+...     return 2
+... 
+>>> 
+>>> quit()
+➜  ~ python3
+Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+➜  ~ python3
+Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> string = "Hello"
+>>> string.upper()
+'HELLO'
+>>> x = string.upper()
+>>> string is x
+False
+>>> string
+'Hello'
+>>> string.upper is x
+False
+>>> string.upper() is x
+False
+>>> groceries = []
+>>> groceries.append("Apples")
+>>> groceries
+['Apples']
+>>> bananas = groceries.append("bananas")
+>>> bananas
+>>> groceries.append("bananas")
+>>> gorceries
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'gorceries' is not defined
+>>> groceries
+['Apples', 'bananas', 'bananas']
+>>> bananas is none
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'none' is not defined
+>>> clear
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> quit()
+➜  ~ clear
+
+➜  ~ python3
+Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Fuck You Asshole")
+Fuck You Asshole
+>>> name = input("What's your name?")
+What's your name? Horace
+>>> name
+' Horace'
+>>> 9 // 2
+4
+>>> 9 / 2
+4.5
+>>> import math
+>>> math.floor(7 / 2)
+3
+>>> 6**10
+60466176
+>>> 2 ** 10
+1024
+>>> 4 % 3
+1
+>>> for i in range(100):
+...     print(i % 10)
+... 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> quit()
+➜  ~ cd desktop
+➜  desktop cd 190319
+➜  190319 ls
+Candy_Betting_v1.py   catch_not_cat.py      madlib.py
+Hello.py              demo1.py              make_change.py
+MadLib2.py            dictionary_demo.py    make_change_adv1.py
+Magic_8_Ball          emoticons.py          not_three_arrows.py
+Magic_8_Ball.py       enough_sleep.py       password_gen.py
+Pattern_gen.py        favorite_colors.py    random_opinion_gen.py
+RPS.py                functions.py          temp.py
+addition_tester.py    grading.py            turn_direction.py
+anagram_checker.py    guess_the_number.py
+average_numbers.py    list_and_string.py
+➜  190319 python3 average_numbers.py
+5
+0
+8
+3
+4
+1
+6
+27
+➜  190319 python3 average_numbers.py
+5
+0
+8
+3
+4
+1
+6
+➜  190319 python3 average_numbers.py
+5
+0
+8
+3
+4
+1
+6
+5
+0
+8
+3
+4
+1
+6
+➜  190319 python3 average_numbers.py
+5
+0
+8
+3
+4
+1
+6
+Traceback (most recent call last):
+  File "average_numbers.py", line 16, in <module>
+    total += newNum
+NameError: name 'total' is not defined
+➜  190319 python3 average_numbers.py
+27
+➜  190319 python3 average_numbers.py
+  File "average_numbers.py", line 11
+    runningSum / len = average_of_nums
+    ^
+SyntaxError: can't assign to operator
+➜  190319 python3 average_numbers.py
+27
+Traceback (most recent call last):
+  File "average_numbers.py", line 11, in <module>
+    runningSum / len 
+TypeError: unsupported operand type(s) for /: 'int' and 'builtin_function_or_method'
+➜  190319 python3 average_numbers.py
+27
+3.857142857142857
+➜  190319 git add
+fatal: not a git repository (or any of the parent directories): .git
+➜  190319 git init
+Initialized empty Git repository in /Users/sofie/Desktop/190319/.git/
+➜  190319 git:(master) ✗ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Candy_Betting_v1.py
+	Hello.py
+	MadLib2.py
+	Magic_8_Ball
+	Magic_8_Ball.py
+	Pattern_gen.py
+	RPS.py
+	addition_tester.py
+	anagram_checker.py
+	average_numbers.py
+	catch_not_cat.py
+	demo1.py
+	dictionary_demo.py
+	emoticons.py
+	enough_sleep.py
+	favorite_colors.py
+	functions.py
+	grading.py
+	guess_the_number.py
+	list_and_string.py
+	madlib.py
+	make_change.py
+	make_change_adv1.py
+	not_three_arrows.py
+	password_gen.py
+	random_opinion_gen.py
+	temp.py
+	turn_direction.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  190319 git:(master) ✗ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+➜  190319 git:(master) ✗ git add .
+➜  190319 git:(master) ✗ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   Candy_Betting_v1.py
+	new file:   Hello.py
+	new file:   MadLib2.py
+	new file:   Magic_8_Ball
+	new file:   Magic_8_Ball.py
+	new file:   Pattern_gen.py
+	new file:   RPS.py
+	new file:   addition_tester.py
+	new file:   anagram_checker.py
+	new file:   average_numbers.py
+	new file:   catch_not_cat.py
+	new file:   demo1.py
+	new file:   dictionary_demo.py
+	new file:   emoticons.py
+	new file:   enough_sleep.py
+	new file:   favorite_colors.py
+	new file:   functions.py
+	new file:   grading.py
+	new file:   guess_the_number.py
+	new file:   list_and_string.py
+	new file:   madlib.py
+	new file:   make_change.py
+	new file:   make_change_adv1.py
+	new file:   not_three_arrows.py
+	new file:   password_gen.py
+	new file:   random_opinion_gen.py
+	new file:   temp.py
+	new file:   turn_direction.py
+
+➜  190319 git:(master) ✗ git commit
+[master (root-commit) 6870e2d] initial commit
+ 28 files changed, 516 insertions(+)
+ create mode 100644 Candy_Betting_v1.py
+ create mode 100644 Hello.py
+ create mode 100644 MadLib2.py
+ create mode 100644 Magic_8_Ball
+ create mode 100644 Magic_8_Ball.py
+ create mode 100644 Pattern_gen.py
+ create mode 100644 RPS.py
+ create mode 100644 addition_tester.py
+ create mode 100644 anagram_checker.py
+ create mode 100644 average_numbers.py
+ create mode 100644 catch_not_cat.py
+ create mode 100644 demo1.py
+ create mode 100644 dictionary_demo.py
+ create mode 100644 emoticons.py
+ create mode 100644 enough_sleep.py
+ create mode 100644 favorite_colors.py
+ create mode 100644 functions.py
+ create mode 100644 grading.py
+ create mode 100644 guess_the_number.py
+ create mode 100644 list_and_string.py
+ create mode 100644 madlib.py
+ create mode 100644 make_change.py
+ create mode 100644 make_change_adv1.py
+ create mode 100644 not_three_arrows.py
+ create mode 100644 password_gen.py
+ create mode 100644 random_opinion_gen.py
+ create mode 100644 temp.py
+ create mode 100644 turn_direction.py
+➜  190319 git:(master) git remote add origin https://github.com/EddieMichael1983/PDX_Code_Guild_Labs.git
+git push -u origin master
+Counting objects: 30, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (30/30), 7.43 KiB | 1.49 MiB/s, done.
+Total 30 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/EddieMichael1983/PDX_Code_Guild_Labs.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+➜  190319 git:(master) 
