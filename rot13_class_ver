@@ -1,0 +1,19 @@
+#def rot13(message):
+#for character in message:  
+    
+    #ascii_code = ord(character)
+    #ascii_code =
+
+    #encoded_character = chr(ascii_code)
+    #print(encoded_character)
+
+#rot13('abcde')
+
+def rot13(message):
+    for character in message:
+        ascii_code = ord(character)
+        index = ascii_code - 97
+        index = (index + 13) % 26
+        print(index)
+
+rot13("abcde")
