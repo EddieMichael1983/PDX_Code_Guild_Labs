@@ -32,6 +32,9 @@ while True:
         elif operation == "*":
 
             print (num1 * num2) 
+<<<<<<< HEAD
 
   
 
+=======
+>>>>>>> 56e7072b42c8c140feffdb49345bfedf60251e19
